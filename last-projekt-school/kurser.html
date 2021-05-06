@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1> Mina Studier - Rufus Länsisalmi</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="kurser.html">Kurser</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="To-Do.html">To-Do</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Kurser</th>
+            <th scope="col">Kunskapspoäng(kp)</th>
+            <th scope="col">Timmar(h)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Grunder i programmering</td>
+            <td>2kp</td>
+            <td>36 h</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Användbarhet och tillg.</td>
+            <td>1kp</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Användargränssnitt</td>
+            <td colspan="2">       3</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Utvecklingsmiljöer</td>
+            <td colspan="2">       2</td>
+            <td>  </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Användning av frameworks</td>
+            <td colspan="2">       3</td>
+            <td>   </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Dokumentation och testning</td>
+            <td colspan="2">       3 </td>
+            <td>    </td>
+          </tr> <tr>
+            <th scope="row">7</th>
+            <td>2D/3D objekt</td>
+            <td colspan="2">    3    </td>
+            <td>     </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Animering</td>
+            <td colspan="2">  4    </td>
+            <td>      </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>kompilatorprogrammering</td>
+            <td colspan="2"> 2    </td>
+            <td>       </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Total</td>
+            <td colspan="2">  23 </td>
+            <td>       </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1>Pie Chart</h1>    
+    <div class="container">        
+        <canvas id="pieChart"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./pieChart.js"></script>
+</body>
+</html>
